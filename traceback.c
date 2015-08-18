@@ -1,7 +1,7 @@
 
 #include "strrev.c"
 
-	// TODO not distingushing between same score different sequence.  Ignoring traceback after only 1 of i or j hits 0
+	// Builds the string of the aligned sequences
 	void traceback(struct node* node, struct SA_BWT indexes, int j, int r_pos, int s){
 		results[r_pos].score = node->max[j];
 		int x = 0;
